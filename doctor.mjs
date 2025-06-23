@@ -51,7 +51,7 @@ async function checkApiKey() {
       'API Configuration Found', 
       false, 
       'Create a .env file in your project root with HACKATIME_API_KEY and HACKATIME_API_URL',
-      'The .env file stores your secret API credentials. It should look like:\nHACKATIME_API_KEY=your_key_here\nHACKATIME_API_URL=https://your-hackatime-server.com'
+      'The .env file stores your secret API credentials. It should look like:\nHACKATIME_API_KEY=your_key_here\nHACKATIME_API_URL=https://hackatime.hackclub.com/api/hackatime/v1'
     );
     return;
   }

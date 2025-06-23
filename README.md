@@ -8,6 +8,25 @@ Hackatime Doctor is like a health checkup for your development environment. It c
 
 ## 🏃‍♂️ Quick Start
 
+### First, set up the doctor tool:
+
+1. **Download this project**
+   ```bash
+   # If you have git:
+   git clone <repository-url>
+   cd hackatime-doc
+   
+   # Or download and extract the ZIP file, then:
+   cd hackatime-doc
+   ```
+
+2. **Install the required packages**
+   ```bash
+   npm install
+   ```
+
+3. **Now you can run the doctor!**
+
 ### Option 1: Simple command
 ```bash
 node doctor.mjs
@@ -49,12 +68,17 @@ Don't worry! Here's what to do:
    cd path/to/hackatime-doc
    ```
 
-3. **Run the doctor**
+3. **Install the required packages**
+   ```bash
+   npm install
+   ```
+
+4. **Run the doctor**
    ```bash
    node doctor.mjs
    ```
 
-4. **Follow the suggestions!**
+5. **Follow the suggestions!**
    - The tool will show you exactly what to fix
    - Copy and paste the suggested commands
    - Run the doctor again to see your progress
@@ -117,6 +141,33 @@ Once all checks pass:
 ## 🔄 Running again
 
 You can run this tool as many times as you want! It's especially helpful to run it again after fixing issues to make sure everything is working.
+
+## 🚨 Troubleshooting the Doctor Tool
+
+### "node: command not found"
+You need to install Node.js first:
+- Visit https://nodejs.org/ and download the LTS version
+- Follow the installation instructions for your operating system
+
+### "Cannot find module 'chalk'" or similar errors
+You need to install the dependencies:
+```bash
+npm install
+```
+
+### "Permission denied" errors
+On Mac/Linux, you might need to make the file executable:
+```bash
+chmod +x doctor.mjs
+```
+
+### Script runs but doesn't do anything
+Make sure you're in the right folder:
+```bash
+# Check if you're in the hackatime-doc folder
+ls
+# You should see: doctor.mjs, package.json, README.md
+```
 
 ---
 
