@@ -1,10 +1,13 @@
 {
   "name": "hackatime-doc",
   "version": "1.0.0",
-  "description": "",
+  "description": "A beginner-friendly diagnostic tool for Hackatime setup and configuration",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "doctor": "node doctor.mjs",
+    "checkup": "node doctor.mjs",
+    "help": "node doctor.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.4.1",
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2"
   }
 }
