@@ -92,7 +92,12 @@ mkdir src
 Create a file called `.env` in your project root:
 ```env
 HACKATIME_API_KEY=your_api_key_here
-HACKATIME_API_URL=https://your-hackatime-server.com
+HACKATIME_API_URL=https://hackatime.hackclub.com/api/hackatime/v1
+```
+
+**Tip**: You can also copy the `.env.example` file and fill in your API key:
+```bash
+cp .env.example .env
 ```
 
 ## 🎯 What's next?
